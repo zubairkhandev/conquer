@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+
+.navigationBar .active,
+.navigationBar li:hover {
+  background-color: #49505f;
+}
+
+/* Home Page */
+
+.home {
+  background-image: url(./images/bg-1.jpg);
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20%;
+}
+
+.home h1 {
+  font-size: 5.5rem;
+  font-weight: 400;
+  text-shadow: 3px 3px black;
+}
+
+.home p {
+  font-size: 2.1rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* About Us */
+
+.about-text p {
+  min-height: 120px;
+}
+.large-button {
+  border: 1px solid #00000042;
+  border-radius: 8px;
+  background-color: white;
+  margin-right: 4rem;
+  padding: 0.5rem 1.5rem;
+  color: gray;
+}
+
+.large-button:hover {
+  background-color: #e1e3e4ad;
+}
+
+/* Services */
+
+.services-desc1 {
+  background-image: url(./images/bg-2.jpg);
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-text1 h2,
+.contact-desc1 h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 3px 2px #8080807d;
+}
+
+.services-text1 p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.services-text2 {
+  min-height: 240px;
+}
+.services-text2 p {
+  min-height: 70px;
+}
+
+/* Contact */
+
+.contact-desc1 {
+  background-image: url(./images/bg-3.jpg);
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-desc-box {
+  opacity: 0.5;
+  border-radius: 10px;
+  color: black;
+  font-size: 1rem;
+}
+
+.details {
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.form-button {
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: black;
+  margin-right: 4rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+}
+
+.form-button:hover {
+  background-color: #e1e3e4ad;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px) {
+  .about-text p {
+    min-height: 170px;
+  }
+  .services-text2 {
+    min-height: 284px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    padding: 20% 15% 10%;
+  }
+  .home h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px black;
+  }
+  .home p {
+    font-size: 1.5rem;
+  }
+  .about-text p {
+    min-height: auto;
+  }
+  .services-text2 {
+    min-height: auto;
+  }
+  .services-text2 p {
+    min-height: auto;
+  }
+}
